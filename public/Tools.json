@@ -1,0 +1,29 @@
+[
+  {
+    "_id": 1,
+    "name": "MAX471 Voltage & Current Sensor",
+    "minquantity": 500,
+    "avlquantity": 1000,
+    "price": "Tk 650.00",
+    "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+    "img": "https://i.ibb.co/z5HFRSC/max471.jpg"
+  },
+  {
+    "_id": 2,
+    "name": "L298N Stepper Motor Driver Red",
+    "minquantity": 300,
+    "avlquantity": 7000,
+    "price": "Tk 190.00",
+    "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+    "img": "https://i.ibb.co/8YvSsGt/l298n-stepper-motor-driver-red.jpg"
+  },
+  {
+    "_id": 3,
+    "name": "K150 PIC Programmer",
+    "minquantity": 400,
+    "avlquantity": 9000,
+    "price": "Tk 1,298.00",
+    "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+    "img": "https://i.ibb.co/PjY9RYd/k150-pic-programmer.jpg"
+  }
+]
