@@ -17,15 +17,20 @@ const MyPortfolio = () => {
               (CSE){" "}
             </h2>
           </div>
-          <div class="text-3xl font-bold py-6">
+          <div class="text-2xl font-bold py-6">
             <h1>Technologies or Skills</h1>
-
             <li>HTML/CSS skills.</li>
             <li> Analytical skills.</li>
             <li> Responsive design skills.</li>
             <li>JavaScript skills.</li>
             <li>Testing and debugging skills.</li>
             <li> Back-end basics.</li>
+          </div>
+          <div class="text-2xl font-bold py-2">
+            <h1>Three of My Projects</h1>
+            <li>https://laptop-review-react-tailwind.netlify.app/</li>
+            <li>https://random-laptop-pick.netlify.app/</li>
+            <li>https://inventory-management-5d2da.web.app/</li>
           </div>
         </div>
       </div>
