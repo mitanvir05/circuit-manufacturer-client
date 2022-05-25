@@ -85,8 +85,21 @@ const Blogs = () => {
       </div>
       <div class="card w-96 bg-base-100 shadow-xl">
         <div class="card-body">
-          <h2 class="card-title">Card title!</h2>
-          <p>If a dog chews shoes whose shoes does he choose?</p>
+          <h2 class="card-title">
+            What is a unit test? Why should write unit tests?
+          </h2>
+          <p>
+            UNIT TESTING is a type of software testing where individual units or
+            components of a software are tested. The purpose is to validate that
+            each unit of the software code performs as expected. Unit Testing is
+            done during the development of an application by the developers.
+            Unit Tests isolate a section of code and verify its correctness. A
+            unit may be an individual function, method, procedure, module, or
+            object. <br /> Unit testing allows software developers to actually
+            think through the design of the software and what has to be done
+            before they write the code. This can help them to stay focused and
+            can also help them to create much better designs.
+          </p>
         </div>
       </div>
     </div>
