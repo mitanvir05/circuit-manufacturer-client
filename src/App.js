@@ -10,6 +10,7 @@ import MyPortfolio from "./Pages/MyPortfolio/MyPortfolio";
 import Footer from "./Pages/Shared/Footer/Footer";
 import Header from "./Pages/Shared/Header/Navbar";
 import NotFound from "./Pages/Shared/NotFound/NotFound";
+import ToolDetails from "./Pages/ToolDetails/ToolDetails";
 
 function App() {
   return (
@@ -17,8 +18,9 @@ function App() {
       <Header></Header>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="about" element={<About />} />
+        <Route path="/about" element={<About />} />
         <Route path="businesssummary" element={<BusinessSummary />} />
+        <Route path="/tool/:toolId" element={<ToolDetails />} />
 
         <Route path="blogs" element={<Blogs />} />
         <Route path="portfolio" element={<MyPortfolio />} />

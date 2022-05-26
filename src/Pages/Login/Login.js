@@ -1,11 +1,11 @@
 import React, { useEffect } from "react";
+import auth from "../../firebase.init";
 import {
   useSignInWithEmailAndPassword,
   useSignInWithGoogle,
 } from "react-firebase-hooks/auth";
 import { useForm } from "react-hook-form";
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import auth from "../../firebase.init";
 import Loading from "../Shared/Loading";
 
 const Login = () => {
@@ -121,7 +121,7 @@ const Login = () => {
             />
           </form>
           <p>
-            New to High-tech PCB ?{" "}
+            New to doctors portal ?{" "}
             <Link className="text-primary" to="/signup">
               Create New Account
             </Link>
