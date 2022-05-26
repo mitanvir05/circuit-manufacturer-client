@@ -14,7 +14,7 @@ import NotFound from "./Pages/Shared/NotFound/NotFound";
 import ToolDetails from "./Pages/ToolDetails/ToolDetails";
 import RequireAuth from "./Pages/Login/RequireAuth";
 import MyOrder from "./Pages/DashBoard/MyOrder";
-import MyReview from "./Pages/DashBoard/MyReview";
+import MyReview from "./Pages/DashBoard/AddReview";
 import MyProfile from "./Pages/DashBoard/MyProfile";
 
 function App() {
@@ -25,7 +25,14 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="businesssummary" element={<BusinessSummary />} />
-        <Route path="/tool/:_id" element={<ToolDetails />} />
+        <Route
+          path="/tool/:_id"
+          element={
+            <RequireAuth>
+              <ToolDetails />
+            </RequireAuth>
+          }
+        />
 
         <Route
           path="dashboard"
