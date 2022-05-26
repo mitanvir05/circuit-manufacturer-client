@@ -121,7 +121,7 @@ const Login = () => {
             />
           </form>
           <p>
-            New to doctors portal ?{" "}
+            New to High-tech PCB ?{" "}
             <Link className="text-primary" to="/signup">
               Create New Account
             </Link>
