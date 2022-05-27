@@ -1,7 +1,10 @@
 import React from "react";
 import { useForm } from "react-hook-form";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const AddItem = () => {
+  const notify = () => toast("Product Added!");
   const { register, handleSubmit } = useForm();
   const onSubmit = (data) => {
     console.log(data);
@@ -63,11 +66,13 @@ const AddItem = () => {
           {...register("img")}
         />
         <input
+          onClick={notify}
           className="mb-5 btn btn-primary"
           value="Add Tool"
           type="submit"
         />
       </form>
+      <ToastContainer />
     </div>
   );
 };

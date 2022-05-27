@@ -2,8 +2,10 @@ import React from "react";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { useForm } from "react-hook-form";
 import auth from "../../../firebase.init";
-
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 const Contact = () => {
+  const notify = () => toast("Data Send!");
   const [user] = useAuthState(auth);
   const { register, handleSubmit } = useForm();
   const onSubmit = (data) => {
@@ -56,12 +58,14 @@ const Contact = () => {
           />
 
           <input
+            onClick={notify}
             className="mb-5 btn btn-primary"
             value="Submit"
             type="submit"
           />
         </form>
       </div>
+      <ToastContainer />
     </div>
   );
 };
