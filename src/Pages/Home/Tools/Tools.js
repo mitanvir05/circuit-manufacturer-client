@@ -13,8 +13,8 @@ const Tools = () => {
       <h1 className="text-center font-bold text-3xl py-3">
         Available Circuits : {tools.length}{" "}
       </h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
-        {tools.map((tool) => (
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 ">
+        {tools?.slice(1, 4).map((tool) => (
           <Tool key={tool._id} tool={tool}></Tool>
         ))}
       </div>

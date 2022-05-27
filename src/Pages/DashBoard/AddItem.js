@@ -20,41 +20,44 @@ const AddItem = () => {
   };
 
   return (
-    <div className="w-50 mx-auto">
+    <div className="text-center py-8">
       <h1>Please Insert Details</h1>
-      <form className="d-flex flex-column" onSubmit={handleSubmit(onSubmit)}>
+      <form
+        className="grid grid-cols-1 justify-items-center gap-5"
+        onSubmit={handleSubmit(onSubmit)}
+      >
         <input
-          className="mb-2"
+          className="input input-bordered input-sm w-full max-w-xs"
           placeholder="Name"
           type="text"
           {...register("name")}
         />
         <input
-          className="mb-2"
+          className="input input-bordered input-sm w-full max-w-xs"
           placeholder="Price"
           type="text"
           {...register("price")}
         />
         <input
-          className="mb-2"
+          className="input input-bordered input-sm w-full max-w-xs"
           placeholder="Available Quantity"
           type="number"
           {...register("avlquantity")}
         />
         <input
-          className="mb-2"
+          className="input input-bordered input-sm w-full max-w-xs"
           placeholder="Minimun Quantity for order"
           type="number"
           {...register("minquantity")}
         />
-        <textarea
-          className="mb-2"
+        <input
+          className="input input-bordered input-lg w-full max-w-xs"
           placeholder="Description"
           type="text"
           {...register("description")}
         />
         <input
-          className="mb-2"
+          className="input input-bordered input-sm w-full max-w-xs"
           placeholder="Image Link"
           type="text"
           {...register("img")}

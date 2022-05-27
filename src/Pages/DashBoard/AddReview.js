@@ -20,18 +20,23 @@ const AddReview = () => {
   };
 
   return (
-    <div className="w-50 mx-auto py-3">
-      <h1>Please Give a Review</h1>
-      <form className="" onSubmit={handleSubmit(onSubmit)}>
-        <textarea
-          className="mb-2"
+    <div className="w-50 mx-auto py-3  container">
+      <h1 className="text-center text-primary font-bold text-3xl py-5">
+        Please Give a Review
+      </h1>
+      <form
+        className="grid grid-cols-1 justify-items-center gap-5"
+        onSubmit={handleSubmit(onSubmit)}
+      >
+        <input
+          className="input input-bordered input-lg w-full max-w-xs"
           placeholder="Description"
           type="text"
           {...register("description")}
         />
 
         <input
-          className="mb-2"
+          className="input input-bordered input-sm w-full max-w-xs"
           placeholder="Rating"
           type="number"
           {...register("rating")}

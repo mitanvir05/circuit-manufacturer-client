@@ -1,7 +1,11 @@
 import React, { useEffect, useState } from "react";
+import { useAuthState } from "react-firebase-hooks/auth";
 import { useParams } from "react-router-dom";
+import auth from "../../firebase.init";
 
 const ToolDetails = () => {
+  const [user] = useAuthState(auth);
+
   const { _id } = useParams();
   const [toolDetails, setToolDetails] = useState({});
   useEffect(() => {
@@ -11,12 +15,15 @@ const ToolDetails = () => {
       .then((data) => setToolDetails(data));
   }, [_id, toolDetails]);
   return (
-    <div>
-      <div className="card w-100 bg-base-100 shadow-xl">
+    <div className="">
+      <div className="card w-96 bg-base-100 shadow-xl container mx-auto">
         <figure className="px-10 pt-10">
           <img src={toolDetails.img} alt="Shoes" className="rounded-xl" />
         </figure>
         <div className="card-body items-center text-center">
+          <h2>UserNmae {user.displayName}</h2>
+          {console.log(user)}
+          <h2>{user.email}</h2>
           <h2 className="card-title">Circuit Name : {toolDetails.name}</h2>
           <p>Available Quantity : {toolDetails.avlquantity}</p>
           <p>Minimum Order Quantity : {toolDetails.minquantity}</p>
