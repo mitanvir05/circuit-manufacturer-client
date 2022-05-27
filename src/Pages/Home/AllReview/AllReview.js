@@ -17,8 +17,10 @@ const AllReview = () => {
           <div key={review._id}>
             <div class="card w-96 bg-primary text-primary-content">
               <div class="card-body">
-                <h1>Description : {review.data.description}</h1>
-                <h1>Rating : {review.data.rating}</h1>
+                <div className=" text-xl">
+                  <h1>Rating : {review.data.rating}</h1>
+                  <h1>Description : {review.data.description}</h1>
+                </div>
               </div>
             </div>
           </div>
