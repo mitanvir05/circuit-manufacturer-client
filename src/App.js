@@ -17,6 +17,9 @@ import MyOrder from "./Pages/DashBoard/MyOrder";
 import MyReview from "./Pages/DashBoard/AddReview";
 import MyProfile from "./Pages/DashBoard/MyProfile";
 import AddItem from "./Pages/DashBoard/AddItem";
+import Users from "./Pages/DashBoard/Users";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function App() {
   return (
@@ -43,10 +46,11 @@ function App() {
             </RequireAuth>
           }
         >
-          <Route index element={<MyOrder></MyOrder>}></Route>
-          <Route path="profile" element={<MyProfile></MyProfile>}></Route>
+          <Route index element={<MyProfile></MyProfile>}></Route>
+          <Route path="order" element={<MyOrder></MyOrder>}></Route>
           <Route path="review" element={<MyReview></MyReview>}></Route>
           <Route path="additem" element={<AddItem></AddItem>}></Route>
+          <Route path="users" element={<Users></Users>}></Route>
         </Route>
         <Route path="blogs" element={<Blogs />} />
         <Route path="portfolio" element={<MyPortfolio />} />
@@ -54,6 +58,7 @@ function App() {
         <Route path="signup" element={<SignUp />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
+      <ToastContainer />
       <Footer></Footer>
     </div>
   );

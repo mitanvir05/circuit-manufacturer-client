@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
-import { useAuthState } from "react-firebase-hooks/auth";
+
 import { useParams } from "react-router-dom";
+import { useAuthState } from "react-firebase-hooks/auth";
 import auth from "../../firebase.init";
 
 const ToolDetails = () => {
