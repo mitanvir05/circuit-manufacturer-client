@@ -1,6 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
-import About from "./Pages/About/About";
+
 import Blogs from "./Pages/Blogs/Blogs";
 import Dashboard from "./Pages/DashBoard/DashBoard";
 import BusinessSummary from "./Pages/Home/BusinessSummary/BusinessSummary";
@@ -20,6 +20,7 @@ import AddItem from "./Pages/DashBoard/AddItem";
 import Users from "./Pages/DashBoard/Users";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import ManageTools from "./Pages/DashBoard/ManageTools";
 
 function App() {
   return (
@@ -27,7 +28,7 @@ function App() {
       <Header></Header>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
+
         <Route path="businesssummary" element={<BusinessSummary />} />
         <Route
           path="/tool/:_id"
@@ -51,6 +52,10 @@ function App() {
           <Route path="review" element={<MyReview></MyReview>}></Route>
           <Route path="additem" element={<AddItem></AddItem>}></Route>
           <Route path="users" element={<Users></Users>}></Route>
+          <Route
+            path="managetools"
+            element={<ManageTools></ManageTools>}
+          ></Route>
         </Route>
         <Route path="blogs" element={<Blogs />} />
         <Route path="portfolio" element={<MyPortfolio />} />
